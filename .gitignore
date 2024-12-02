@@ -1,0 +1,4 @@
+*.txt
+poetry.lock
+.tool-versions
+pyproject.toml
