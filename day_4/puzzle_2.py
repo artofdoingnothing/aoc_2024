@@ -1,19 +1,4 @@
 from typing import List
-import re
-
-def get_diagonal_elements(array):
-    diagonals = []
-    rows = len(array)
-    cols = len(array[0])
-
-    for k in range(rows + cols - 1):
-        diagonal = []
-        for i in range(max(0, k - cols + 1), min(k + 1, rows)):
-            j = k - i
-            diagonal.append(array[i][j])
-        diagonals.append(diagonal)
-
-    return diagonals
 
 def read_and_parse_from_file(file_name: str) -> List[List[int]]:
     with open(file_name, 'r') as reader:

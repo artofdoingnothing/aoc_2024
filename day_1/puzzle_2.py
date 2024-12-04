@@ -1,5 +1,4 @@
 from typing import List
-import re
 
 def read_and_parse_from_file(file_name: str) -> List[List[int]]:
     with open(file_name, 'r') as reader:
